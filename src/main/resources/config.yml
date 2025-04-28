@@ -1,0 +1,16 @@
+networking:
+  # Web Server IP
+  host: 0.0.0.0
+
+  # Port the Web Server will listen on
+  port: 4572
+
+  # The URL path is now empty as we're using the root
+  url_path: ""
+
+behaviour:
+  # The maximum entries a player can enter when looking up objects by name
+  max_lookup_size: 100
+
+  # Setting for testing reasons
+  developer_mode: true

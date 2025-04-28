@@ -1,0 +1,10 @@
+name: OMCAPI
+version: "${project.version}"
+main: net.orbismc.omcapi.OMCAPI
+api-version: "1.21.1"
+depend: [Towny, Vault, DiscordSRV, RealisticSeasons, TownyCultures, mcMMO]
+authors: [InjurynSickness]
+contributors: [Lunatictown, _Augustinus_]
+description: API for OrbisMC using Javalin
+website: https://www.orbismc.com
+folia-supported: true
