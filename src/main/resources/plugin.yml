@@ -2,7 +2,7 @@ name: OMCAPI
 version: "${project.version}"
 main: net.orbismc.omcapi.OMCAPI
 api-version: "1.21.1"
-depend: [Towny, Vault, DiscordSRV, RealisticSeasons, TownyCultures, mcMMO]
+depend: [Towny, Vault, RealisticSeasons]
 authors: [InjurynSickness]
 contributors: [Lunatictown, _Augustinus_]
 description: API for OrbisMC using Javalin

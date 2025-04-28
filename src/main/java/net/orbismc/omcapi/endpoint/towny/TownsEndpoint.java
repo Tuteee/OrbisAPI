@@ -14,7 +14,7 @@ import net.orbismc.omcapi.object.endpoint.PostEndpoint;
 import net.orbismc.omcapi.util.EndpointUtils;
 import net.orbismc.omcapi.util.JSONUtil;
 import java.util.UUID;
-import com.gmail.goosius.townycultures.metadata.TownMetaDataController;
+
 public class TownsEndpoint extends PostEndpoint<Town> {
 
     @Override
@@ -40,7 +40,6 @@ public class TownsEndpoint extends PostEndpoint<Town> {
         townObject.addProperty("uuid", town.getUUID().toString());
         townObject.addProperty("board", town.getBoard().isEmpty() ? null : town.getBoard());
         townObject.addProperty("founder", town.getFounder());
-       
 
         townObject.add("mayor", EndpointUtils.getResidentJsonObject(town.getMayor()));
         townObject.add("nation", EndpointUtils.getNationJsonObject(town.getNationOrNull()));
@@ -70,7 +69,6 @@ public class TownsEndpoint extends PostEndpoint<Town> {
         statsObject.addProperty("numTrusted", town.getTrustedResidents().size());
         statsObject.addProperty("numOutlaws", town.getOutlaws().size());
         statsObject.addProperty("balance", TownyEconomyHandler.isActive() ? town.getAccount().getHoldingBalance() : 0);
-        statsObject.addProperty("culture", !TownMetaDataController.hasTownCulture(town) ? null : TownMetaDataController.getTownCulture(town));
         statsObject.addProperty("forSalePrice", !town.isForSale() ? null : town.getForSalePrice());
         townObject.add("stats", statsObject);
 

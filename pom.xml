@@ -6,7 +6,7 @@
 
     <groupId>net.orbismc</groupId>
     <artifactId>OMCAPI</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
 
     <name>OMCAPI</name>
@@ -66,10 +66,6 @@
             <url>https://jitpack.io</url>
         </repository>
         <repository>
-            <id>Scarsz-Nexus</id>
-            <url>https://nexus.scarsz.me/content/groups/public/</url>
-        </repository>
-        <repository>
             <id>placeholderapi</id>
             <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
@@ -105,31 +101,11 @@
             <version>2.16.1</version>
         </dependency>
         <dependency>
-            <groupId>com.discordsrv</groupId>
-            <artifactId>discordsrv</artifactId>
-            <version>1.27.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>me.casperge</groupId>
             <artifactId>realisticseasons</artifactId>
             <version>11.6.7</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/RealisticSeasons-11.6.7.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.gmail.goosius</groupId>
-            <artifactId>townycultures</artifactId>
-            <version>2.0.3</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/TownyCultures-2.0.3.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>com.gmail.nossr50</groupId>
-            <artifactId>mcmmo</artifactId>
-            <version>2.1.224</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/mcMMO.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
